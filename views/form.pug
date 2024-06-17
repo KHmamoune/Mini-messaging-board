@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    form(method="POST" action="/new")
+        div
+            label(for="auth") author:
+            input(id="auth" type="text" name="author")
+        div
+            label(for="mes") message:
+            input(id="mes" type="text" name="message")
+        button submit

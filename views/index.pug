@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div
+        each mes in messages
+            div
+                p= mes.user
+                p!= mes.text + "<br>" + mes.added
+    a(href="/new") add new message
